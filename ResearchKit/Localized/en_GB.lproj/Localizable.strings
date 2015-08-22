@@ -125,7 +125,7 @@
 "BUTTON_OPTION_STOP_TASK" = "End Task";
 
 /* General active tasks. */
-"COUNTDOWN_LABEL" = "Starting activity in";
+"COUNTDOWN_LABEL" = "Starting observation in";
 "TASK_COMPLETE_TITLE" = "Activity Complete";
 "TASK_COMPLETE_TEXT" = "Your data will be analysed and you will be notified when your results are ready.";
 
