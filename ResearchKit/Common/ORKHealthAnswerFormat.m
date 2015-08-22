@@ -130,8 +130,7 @@ NSString *ORKHKBloodTypeString(HKBloodType bloodType) {
         NSString *identifier = [_characteristicType identifier];
         if ([identifier isEqualToString:HKCharacteristicTypeIdentifierBiologicalSex]) {
             NSArray *options = @[[ORKTextChoice choiceWithText:ORKLocalizedString(@"GENDER_FEMALE", nil) value: ORKHKBiologicalSexString(HKBiologicalSexFemale)],
-                                 [ORKTextChoice choiceWithText:ORKLocalizedString(@"GENDER_MALE", nil) value:ORKHKBiologicalSexString(HKBiologicalSexMale)],
-                                 [ORKTextChoice choiceWithText:ORKLocalizedString(@"GENDER_OTHER", nil) value:ORKHKBiologicalSexString(HKBiologicalSexOther)]
+                                 [ORKTextChoice choiceWithText:ORKLocalizedString(@"GENDER_MALE", nil) value:ORKHKBiologicalSexString(HKBiologicalSexMale)]
                                  ];
             ORKTextChoiceAnswerFormat *format = [ORKAnswerFormat choiceAnswerFormatWithStyle:ORKChoiceAnswerStyleSingleChoice textChoices:options];
             impliedAnswerFormat = format;
