@@ -53,7 +53,11 @@
         
         if ([answerFormat isKindOfClass:[ORKValuePickerAnswerFormat class]]) {
             ORKValuePickerAnswerFormat *vpaf = (ORKValuePickerAnswerFormat *)answerFormat;
-            ORKTextChoice *nullChocie = [ORKTextChoice choiceWithText:ORKLocalizedString(@"NULL_ANSWER", nil) value:ORKNullAnswerValue()];
+            NSString *defaultNullAnswer = @"NULL_ANSWER";
+            if (vpaf.defaultNullAnswerValue) {
+                defaultNullAnswer = vpaf.defaultNullAnswerValue;
+            }
+            ORKTextChoice *nullChocie = [ORKTextChoice choiceWithText:ORKLocalizedString(defaultNullAnswer, nil) value:ORKNullAnswerValue()];
             _choices = [@[nullChocie] arrayByAddingObjectsFromArray:vpaf.textChoices];
             _isValuePicker = YES;
         } else if ([answerFormat isKindOfClass:[ORKTextChoiceAnswerFormat class]]) {

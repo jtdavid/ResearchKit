@@ -474,6 +474,11 @@ ORK_CLASS_AVAILABLE
  */
 @property (copy, readonly) NSArray *textChoices;
 
+/**
+ A localized label to describe the null answerValue
+ */
+@property (nullable) NSString *defaultNullAnswerValue;
+
 @end
 
 

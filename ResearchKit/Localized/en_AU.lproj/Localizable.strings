@@ -121,7 +121,7 @@
 "BUTTON_SKIP_QUESTION" = "Skip this question";
 "BUTTON_START_TIMER" = "Start Timer";
 "BUTTON_OPTION_SAVE" = "Save for Later";
-"BUTTON_OPTION_DISCARD" = "Discard Results";
+"BUTTON_OPTION_DISCARD" = "Discard Session Data";
 "BUTTON_OPTION_STOP_TASK" = "End Task";
 
 /* General active tasks. */
